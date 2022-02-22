@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Election 2022 Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Presidential Survey
+            </h1>
+            <p id="description">
+                If today is the election who will you vote for President ?
+            </p>
+        </header>
+        <form action="#" id="survey-form">
+            <div class="input-box">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="age" id="number" placeholder="Age" required min="18" max="60">
+            </div>
+            <div class="input-box">
+                <label for="dropdown" class="president-label" placeholder="Select your President">You will vote for</label>
+                <select name="President-list" id="dropdown">
+                    <option value="" disabled selected hidden>Select your president</option>
+                    <option value="Ernesto Abella">Ernesto Abella</option>
+                    <option value="Leody de Guzman">Leody de Guzman</option>
+                    <option value="Norberto Gonzales">Norberto Gonzales</option>
+                    <option value="Panfilo Lacson">Panfilo Lacson</option>
+                    <option value="Ferdinand E. Marcos Jr.">Ferdinand E. Marcos Jr.</option>
+                    <option value="Isko Moreno">Isko Moreno</option>
+                    <option value="Manny Pacquiao">Manny Pacquiao</option>
+                    <option value="Leni Robredo">Leni Robredo</option>
+                </select>
+            </div>
+            <div class="input-box input-block">
+                <p class="campaign">Are you actively Campaigning for your President ?</p>
+                <input type="radio" name="active-campaign" id="Yes" value="Yes">
+                <label for="Yes">Yes</label><br>
+                <input type="radio" name="active-campaign" id="No" value="No">
+                <label for="No">No</label><br>
+                <input type="radio" name="active-campaign" id="Sometimes" value="Sometimes">
+                <label for="Sometimes">Sometimes</label>
+            </div>
+            <div class="input-box input-block">
+                <p class="Region">Where are you from ?</p>
+                <input type="checkbox" name="address" id="Luzon" value="Luzon">
+                <label for="Luzon">Luzon</label>
+                <input type="checkbox" name="address" id="Visayas" value="Visayas">
+                <label for="Visayas">Visayas</label>
+                <input type="checkbox" name="address" id="Mindanao" value="Mindanao">
+                <label for="Mindanao">Mindanao</label>
+            </div>
+            <div class="input-box">
+                <p class="reason">Explain why you want to vote for your president.</p>
+                <textarea name="explain" id="explain" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input-box">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
